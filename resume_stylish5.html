@@ -1,0 +1,143 @@
+<html>
+<head>
+  <style>
+    * {
+  max-width: 700px;
+  margin: auto;
+}
+
+
+/*body {
+    min-width: 500px;
+}*/
+
+div {
+  border-radius: 5px;
+}
+
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  z-index: 1;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  clear: both;
+  position: relative;
+}
+
+.left {
+  height: 900px;
+  width: 45px;
+  background-color: #333;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 900px;
+  width: 45px;
+  background-color: #333;
+  float: right;
+  position: inherit;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  font-size: 20px;
+  height: 870px;
+}
+
+p,
+li {
+  font-family: 'Cormorant Garamond';
+}
+
+.head {
+  font-size: 20px;
+}
+
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 430px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
+  </style>
+</head><br>
+<div style="  background-color: #EADEDB;">
+<body><div id="header"></div>
+<div class="left"></div>
+<div class="stuff">
+  <br><br>
+  <h1>Your Name</h1>
+  <h4 style="margin-left: 370px;">yourmail@email.com</h4>
+  <h4 style="margin-left: 450px;">9876543210</h4>
+  <hr />
+  <br>
+  <p>Summary</p>
+  <ul>
+    <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. </li>
+  </ul><br>
+  <p class="head">Skills</p>
+  <ul>
+    <li>skill 1 | skill 2 | skill 3</li>
+  </ul><br>
+  <p class="head">Education</p>
+  <ul>
+      <li>2010 - 2014 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      <li>2015 - 2018 : In faucibus aliquet faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ul><br>
+  <p class="head">Experience</p>
+  <ul>
+    <li>Company, Location<br>Job title, MM/YYYY-Present</li>
+  </ul><br>
+  <p class="head">Activities</p>
+  <ul>
+    <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</li>
+  </ul><br>
+  <p class="head" >Interests</p>
+  <ul>
+    <li>Drawing</li>
+    <li>Photography</li>
+    <li>Design</li>
+    <li>Programming</li>
+    <li>Computer Science</li>
+  </ul>
+</div>
+<div class="right"></div>
+<div id="footer"></div>
+</body></html>

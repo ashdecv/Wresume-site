@@ -1,0 +1,461 @@
+<html>
+<style>
+  body, html {
+  padding-top:2.5em;
+  margin:0;
+  width: 1900px;
+  font-size: 20px;
+}
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -10px;
+  height: 250px;  
+   background-color: #006E51;
+}
+.header-content {
+  display: inline-block;
+}
+section{
+     background-color: #D0f0C0;
+     margin-left: 5px;
+     width: 70%;
+}
+.pic {
+  margin: 0 auto;
+  margin-top:-2.5em;
+  
+  border-radius:10em;
+  height:11em;
+  width:11em;
+  background-size: 100% auto;
+  background-image: url('r2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #e0e0e0;
+  transition : all 0.5s linear;
+  
+}
+
+@-webkit-keyframes wiggle {
+  0%   {
+    transform: rotate(0deg);
+  }
+  25%  {
+    transform: rotate(-30deg);
+  }
+  50%  {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.header-text {
+  margin-top:0.5em;
+  margin-left:1em;
+    background-color: #006E51;
+}
+
+header p {
+  text-align:center;
+  font-family: "Merriweather";
+    background-color: #006E51;
+  margin:0;
+  
+  color: #D0f0C0;
+}
+
+.first-name {
+   font-size: 1.5em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  padding-top:.3em;
+  font-size:0.65em;
+  font-weight:500;
+  color: #D0f0C0;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+  background-color: #D0f0C0;
+  width:50%;
+  padding:0.5em 0 0.5em 0;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 3px solid #333;
+  border-radius:3px;
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;  
+  padding-top:1.5em;
+}
+
+.content:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  font-family: "Merriweather";
+  font-variant:small-caps;
+  font-weight:300;
+  letter-spacing: 1px;
+  color: #006E51;
+  font-size:0.975em;
+  text-align:center;
+  vertical-align:middle;
+  padding-left:6.66%;
+  width:36.66%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #006E51;
+  transition: border 0.66s ease-in;
+}
+
+.content-text:hover {
+  border-left:1px solid #006E51;
+}
+
+.big-text {
+  vertical-align:top;
+  
+  padding-top:1.25em;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  display:inline-block;
+  
+}
+
+.content-text ul li:first-child {
+  width:35%;
+  color: #006E51;
+  
+  font-weight:600;
+  font-size:0.75;
+}
+
+.content-text ul li a {
+  text-decoration: none;
+  color: #006E51;
+}
+
+.content-text ul li a:hover {
+  color:#006E51;
+}
+
+.work-listing p {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  line-height:1.5;
+  color: #424242;
+  
+  margin-left:2em;
+  margin-top:0.25em;
+  margin-bottom:0.75em;
+}
+
+.work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  font-family: "Open Sans";
+  font-size:0.7em;
+  font-weight:400;
+  
+  color: #424242;
+  
+  margin-left:3.25em;
+  padding-left:0.5em;
+  
+  border-left:1px solid #e0e0e0;
+  
+}
+
+.education-listing > .heading {
+  font-weight:600;
+  
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.content-text.skills-listing > ul {
+  display:table-row;
+}
+
+.content-text.skills-listing > ul:last-child {
+  margin-bottom:0;
+}
+
+.content-text.skills-listing > ul > li {
+  display:table-cell;
+  vertical-align:top;
+  
+  padding-left:2em;
+  
+  width:50%;
+  font-weight:600;
+}
+
+.content-text.skills-listing > ul > li span {
+  font-weight:400;
+  color: #006E51;
+}
+
+.content-text.skills-listing > ul > li > .highlight {
+  
+  font-size:1em;
+  font-weight:400;
+  
+  margin-left:1.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #9e9e9e;
+}
+</style>
+<body>
+<div class="main">
+<div class="resume-wrapper">
+  <article class="paper">
+    <header>
+      <div class="header-content">
+        <div class="header-pic" title="Wiggle Wiggle">
+          <div class="pic"></div>
+        </div>
+        <div class="header-text">
+          <p>
+            <span class="first-name">Your Name</span>
+          </p>
+          <p class="subtitle">Web Designer</p>
+        </div>
+      </div>
+    </header>
+    
+    <div class="content-wrapper">
+    
+      <!-- CONTACT -->
+      <section class="content">
+        <div class="row">
+          <div class="content-cat">
+           Contact
+          </div>
+          <div class="content-text">
+            <ul>
+              <li>Website</li>
+              <li>website.com</li>
+            </ul>
+            <ul>
+              <li>Email</li>
+              <li>yourmail@gmail.com</li>
+            </ul>
+            <ul>
+              <li>Phone</li>
+              <li>+123 45678</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section class="content">
+        <div class="row">
+          <div class="content-cat">
+           Location
+          </div>
+          <div class="content-text">
+            <ul>
+              <li>Address</li>
+              <li>Your address</li>
+            </ul>
+            <ul>
+              <li>Postal Code</li>
+              <li>Postal Code</li>
+            </ul>
+            <ul>
+              <li>City</li>
+              <li>City</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILES -->
+      <section class="content">
+        <div class="row">
+          <div class="content-cat">
+           Profiles
+          </div>
+          <div class="content-text">
+            <ul>
+              <li>Twitter</li>
+              <li>
+                <a href="https://twitter.com/yourname" target="_blank">Twittet@yourname</a>
+              </li>
+            </ul>
+            <ul>
+              <li>Facebook</li>
+              <li>
+                <a href="https://facebook.io/yourname" target="_blank">Facebook@yourname</a>
+              </li>
+            </ul>
+            <ul>
+              <li>Github</li>
+              <li>
+                <a href="https://github.com/yourname" target="_blank">Github@yourname</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="row">
+          <div class="content-cat big-text">
+           Self-employed
+            <p>2012-05-01 till today</p>
+          </div>
+          <div class="content-text work-listing">
+            <p>Hondrt.de is a small business enterprise (dt. Kleingewerbe) specializing in serving technical needs of local customers. For example building corporate homepages, technical consulting and programming.</p>
+            <p class="highlight">Implemented and marketed Timedoublr.com, a flexible time tracking app for Apple iOS</p>
+             <p class="highlight">Consulted a medium-sized business in establishing their media presence</p>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="row">
+          <div class="content-cat big-text">
+           Ulm University
+            <p>2013-09-01 till today</p>
+          </div>
+          <div class="content-text work-listing">
+            <p>Development of Module Management System (MMS), a content management system for studycourse module handbooks introduced as part of the Bologna Process. Feature requirements included: versioning of every resource, a complex editorial process, visual representation of high level data structures (e.g. trees) and a flexible, RESTful API.</p>
+            <p class="highlight">Won the Software Construction (dt. Softwaregrundprojekt) class challenge for best usability and got employed by university</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="row">
+          <div class="content-cat">
+            Education
+            <p>2011-10-01 till</p>
+            <p style="margin-top:0.25em;">2015-02-14</p>
+          </div>
+          <div class="content-text work-listing education-listing">
+            <p class="heading">Ulm University</p>
+            <p class="highlight">Media Informatics (Bachelor of Science)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="row">
+          <div class="content-cat big-text">
+            Awards
+            <p>Best Usability</p>
+            <p style="margin-top:0.25em;">2013-07-13</p>
+          </div>
+          <div class="content-text work-listing education-listing">
+            <p class="heading">Faculty of Engineering and Computer Science at Ulm University:</p>
+            <p class="highlight">For developing Module Management System (MMS) a content management system for module handbooks introduced as part of the Bologna Process.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="row">
+          <div class="content-cat big-text">
+            Skills
+          </div>
+          <div class="content-text skills-listing">
+            <ul>
+              <li>
+                Web
+                <span>(Master)</span>
+                <p class="highlight">Node.js</p>
+                <p class="highlight">Angular.js</p>
+              </li>
+              <li>
+                Mobile
+                <span>(Advanced)</span>
+                <p class="highlight">Cocoa</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Languages 
+                <span>(Master)</span>
+                <p class="highlight">Javascript</p>
+              </li>
+              <li>
+                Software
+                <span>(Advanced)</span>
+                <p class="highlight">Adobe Photoshop</p>
+                <p class="highlight">Adobe InDesign</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    
+    </div>
+      
+  </article>
+  
+</div></div>
+</body>
+</html>

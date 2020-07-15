@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+<script>
+	function Export2Doc(element, filename = ''){
+    var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+    var postHtml = "</body></html>";
+    var html = preHtml+document.getElementById(element).innerHTML+postHtml;
+
+    var blob = new Blob(['\ufeff', html], {
+        type: 'application/msword'
+    });
+    
+    var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+    
+    filename = filename?filename+'.doc':'document.doc';
+   
+    var downloadLink = document.createElement("a");
+
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob ){
+        navigator.msSaveOrOpenBlob(blob, filename);
+    }else{
+        downloadLink.href = url;
+        
+        downloadLink.download = filename;
+        
+        downloadLink.click();
+    }
+    
+    document.body.removeChild(downloadLink);
+}
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<head>
+ <title>Wresume.com</title>
+        <link rel="icon" href="cv22.png" 
+        type = "image/x-icon"> 
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div> 
+<header class="site-header clearfix">
+ <nav>
+  <div class="logo">
+   <h1>Wresume.com</h1>
+  </div>
+  <div class="menu"> 
+    <ul>
+    <a href="index.html" class="cool-link"><li>Home</li></a>
+    <a href="#" class="cool-link"><li>About Us</li></a>
+    <a href="g2.html" class="cool-link"><li>Team</li></a>
+    <a href="#" class="cool-link"><li>Contact</li></a>
+   </ul>
+  </div>
+ </nav>
+ <section>
+  <div class="leftside"> 
+   <img src="cv33.png">
+  </div>
+  <div class="rightside"> 
+   <h1>The Wresume site</h1>
+   <p>Get your free resume templates</p>
+  </div>
+  
+ </section>
+
+</header>
+
+
+<br style = “line-height:70;”><br><br><BR><BR>
+<h2>STYLISH</h2>
+
+<div class="row1">
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_7.png">
+<div id="exportContent">
+  <div id="exportContent">
+<table id="threee">
+
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish1.zip">Download</a></div>
+
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_8.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish2.zip">Download</a>
+</div>
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_9.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish3.zip">Download</a>
+</div></div>
+
+
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_10.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish4.zip">Download</a>
+</div>
+
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_11.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+ </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish5.zip">Download</a>
+</div>
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_14.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern2.zip">Download</a>
+</div><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<h2>MODERN</h2>
+
+<div class="row1">
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_13.png">
+<div id="exportContent">
+  <div id="exportContent">
+<table id="threee">
+
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern1.zip">Download</a></div>
+
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_17.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+ </table>
+</div></div>
+<a class="cta-btn" href="resume_modern5.zip">Download</a>
+</div>
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_15.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern3.zip">Download</a>
+</div></div>
+
+
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_16.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern4.zip">Download</a>
+</div>
+
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_12.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish6.zip">Download</a>
+</div>
+
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_18.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern6.zip">Download</a>
+</div><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<h2>CREATIVE</h2>
+
+<div class="row1">
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_19.png">
+<div id="exportContent">
+  <div id="exportContent">
+<table id="threee">
+
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern1.zip">Download</a></div>
+
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_21.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+ </table>
+</div></div>
+<a class="cta-btn" href="resume_modern5.zip">Download</a>
+</div>
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_20.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern3.zip">Download</a>
+</div></div>
+
+
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_22.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern4.zip">Download</a>
+</div>
+
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_23.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_stylish6.zip">Download</a>
+</div>
+
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_24.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  </table>
+</div></div>
+<a class="cta-btn" href="resume_modern6.zip">Download</a>
+</div><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<footer>
+  	<div class="footer-main-div">
+  <div class="footer-social-icons">
+  	<center><p><strong>Join the conversation</strong></p></center><br>
+    <ul>
+      <li><a href="https://www.facebook.com/darshita.shah.7564?epa=SEARCH_BOX" target="blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.github.com/Gaminee" target="blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.twitter.com/darshita45_" target="blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/darshita-shah-33a9361a4" target="blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/___r.g.3006___" target="blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    <br>
+    <br><br>
+    <center><p><i>Copyright 2020 @ Wresume.com. All Rights Reserved.</i> </p></center>
+    </div>
+  </div>
+  </div>
+</div>
+  </footer>
+</body>
+</html>

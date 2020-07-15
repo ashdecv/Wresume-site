@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<script>
+	function Export2Doc(element, filename = ''){
+    var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+    var postHtml = "</body></html>";
+    var html = preHtml+document.getElementById(element).innerHTML+postHtml;
+
+    var blob = new Blob(['\ufeff', html], {
+        type: 'application/msword'
+    });
+    
+    var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+    
+    filename = filename?filename+'.doc':'document.doc';
+   
+    var downloadLink = document.createElement("a");
+
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob ){
+        navigator.msSaveOrOpenBlob(blob, filename);
+    }else{
+        downloadLink.href = url;
+        
+        downloadLink.download = filename;
+        
+        downloadLink.click();
+    }
+    
+    document.body.removeChild(downloadLink);
+}
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<head>
+ <title>Wresume.com</title>
+        <link rel="icon" href="cv22.png" 
+        type = "image/x-icon"> 
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">-->
+</head>
+<body>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div> 
+
+<!--<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>-->
+
+<header class="site-header clearfix">
+ <nav>
+  <div class="logo">
+   <h1>Wresume.com</h1>
+  </div>
+  <div class="menu"> 
+    <ul>
+    <a href="index.html" class="cool-link"><li>Home</li></a>
+    <a href="g1.html" class="cool-link"><li>About Us</li></a>
+    <a href="g2.html" class="cool-link"><li>Team</li></a>
+    <a href="contact.html" class="cool-link"><li>Contact</li></a>
+    <a href="login.php" class="cool-link"><li>Login</li></a>
+   </ul>
+  </div>
+ </nav>
+ <section>
+  <div class="leftside"> 
+   <img src="cv33.png">
+  </div>
+  <div class="rightside"> 
+   <h1>The Wresume site</h1>
+   <p>Get your free resume templates</p>
+  </div>
+  
+ </section>
+
+</header>
+
+
+<br style = “line-height:70;”><br><br><BR><BR>
+<br />
+ <h2 class="cv">Resume Templates</h2><br><br>
+<h2>LESS IS MORE</h2>
+
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_1.png">
+<div id="exportContent">
+  <div id="exportContent">
+<table id="threee">
+<p>
+    <h2>Your Name</h2>
+</p>
+<p>
+    Tokyo, State Zip
+</p>
+<p>
+    (123) 456-7890 • yourmail@gmail.com
+</p>
+<p>
+    linkedin.com/in/yourname
+</p>
+<p align="right">
+    <strong>WORK EXPERIENCE</strong>
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong>Company 4</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    (MM/YYYY)-Present
+</p>
+<p>
+    This is where you write about your experience. Do not simply list your
+    day-to-day job duties. Work in
+        resume keywords
+    that are most relevant to the job for which you’re applying. Try replacing
+    some of your duties with measurable results and accomplishments rather than
+    duties. Remember, “duties tell, accomplishments sell.” To create a strong
+    measurable result, try this format: [Action verb] [brief explanation of
+    accomplishment] resulting in [quantifiable outcome. Using %, $, etc. will
+    draw the eye and make an impact]. For example: “Responded to an average of
+    203 customer service emails per week, improving response time by 74% and
+    customer satisfaction by 31% between 2016 to 2017.”
+</p>
+<p>
+    <strong>Company 3</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    Keep your sentences short and to the point. This will make it easier for a
+    recruiter or hiring manager to read or skim. Use your limited space to
+    focus on things are that most relevant to the new job, rather than going
+    into every detail about the responsibilities that took up most of your
+    time. Tailor your resume to the job description.
+</p>
+<p>
+    <strong>Company 2</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    It’s OK to leave positions off your resume if they aren’t relevant to the
+    job you’re pursuing. Unless the experience is crucial, you can also go into
+    fewer details on older positions.
+</p>
+<p>
+    <strong>Company 1</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    Don’t worry about having the same amount of information for each job. Spend
+    more words on the most transferable skills and experience.
+</p>
+<p align="right">
+    <strong>EDUCATION</strong>
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    Degree, Graduation Year (YYYY)
+</p>
+<p>
+    College Name, Location
+</p>
+  </table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div>
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_2.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+<p>
+    <strong>Your Name</strong>
+    Rio, State Zip • (123) 456-7890
+</p>
+<p align="right">
+    yourmail@gmail.com • linkedin.com/in/yourname
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong>Skills</strong>
+</p>
+<p align="center">
+    Skill 1 Skill 2 Skill 3 Skill 4
+</p>
+<p align="center">
+    Skill 5 Skill 6 Skill 7 Skill 8
+</p>
+<p>
+    <strong>Experience</strong>
+    <strong></strong>
+</p>
+<p>
+    Company 4, Location
+</p>
+<p>
+    <em>Job Title</em>
+    , MM/YYYY-Present
+</p>
+<p>
+    Tailor your experience sections to the job description. Don’t use up too
+    much of your space detailing daily duties that aren’t relevant to the job
+    for which you’re applying. Study the job listing to figure out what’s most
+    important to the hiring manager. Use important        resume keywords
+    and accomplishments that speak to your ability to execute.
+</p>
+<p>
+    Key technologies used: Software/Skill 1, Software/Skill 2, Software/Skill
+    3, Software/Skill 4
+</p>
+<p>
+    Company 3, Location
+</p>
+<p>
+    <em>Job Title</em>
+    , MM/YYYY-Present
+</p>
+<p>
+    Work the hard skills and keywords found in the job description right into
+    your resume. That said, simply listing the keywords in these dedicated
+    skills sections is not enough. Recruiters want to see context that proves
+    that you actually possess the skill. For example, if you mention a piece of
+    software like Microsoft Excel, Adobe Photoshop, or AutoCAD, mention the
+    types of projects it was used for.
+</p>
+<p>
+    Key technologies used: Software/Skill 1, Software/Skill 2, Software/Skill
+    3, Software/Skill 4
+</p>
+<p>
+    Company 2, Location
+</p>
+<p>
+    <em>Job Title</em>
+    , MM/YYYY-Present
+</p>
+<p>
+    Recruiters like to be able to get an idea of why you move from company to
+    company. Demonstrating your increasing impact and responsibility from job
+    to job shows the recruiter that you’re capable of taking on more and more
+    and gives them an idea of where your career is heading.
+</p>
+<p>
+    Company 1, Location
+</p>
+<p>
+    <em>Job Title</em>
+    , MM/YYYY-Present
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    You don’t need to include every job you’ve ever had on your resume. Stick
+    to the jobs that are most relevant and demonstrate your career trajectory.
+    For example, if you are a Project Manager, you probably don’t need to
+    mention the supermarket job you had as a teenager or the bartending job
+    your maintain on the weekends.<strong></strong>
+</p>
+<p>
+    <strong>Education</strong>
+    <strong> </strong>
+</p>
+<p>
+    Degree, Graduation Year (YYYY), College Name, Location
+</p>  </table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------->
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_3.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+  <p align="center">
+    <strong>Your Name</strong>
+    <strong> </strong>
+</p>
+<p align="center">
+    <strong>Application Job Title</strong>
+</p>
+<p align="center">
+    Denver, State Zip • (123) 456-7890 • yourmail@gmail.com •
+    linkedin.com/in/yourname
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>SUMMARY</strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    Add a strong   resume summary
+    here that highlights what it is you do, the types of companies you’ve
+    worked with, and why you’re great at your job. Experience, specializations,
+    areas of interest, etc.
+</p>
+<p>
+    <em>Key skills include:</em>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p align="center">
+Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong></strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>WORK EXPERIENCE</strong>
+</p>
+<p align="center">
+    <strong>Company 4</strong>
+    , Location
+</p>
+<p align="center">
+    <em>Job Title</em>
+    , MM/YYYY-Present
+</p>
+<p>
+    Tailor your experience sections to the job description. Don’t use up too
+    much of your space detailing daily duties that aren’t relevant to the job
+    for which you’re applying.
+</p>
+<p>
+    ● Study the job listing to figure out what’s most important to the hiring
+    manager.
+</p>
+<p>
+    ● Use important resume keywords   and accomplishments that speak to your ability to execute.
+</p>
+<p align="center">
+    <strong>Company 3</strong>
+    , Location
+</p>
+<p align="center">
+    <em>Job Title</em>
+    , MM/YYYY-MM/YYYY
+</p>
+<p>
+    Work the hard skills and keywords found in the job description right into
+    your resume. That said, simply listing the keywords in these dedicated
+    skills sections is not enough.
+</p>
+<p>
+    ● Recruiters want to see context that proves that you actually possess the
+    skill.
+</p>
+<p>
+    ● For example, if you mention a piece of software like Microsoft Excel,
+    Adobe Photoshop, or AutoCAD, mention the types of projects it was used for.
+</p>
+<p align="center">
+    <strong>Company 2</strong>
+    , Location
+</p>
+<p align="center">
+    <em>Job Title</em>
+    , MM/YYYY-MM/YYYY<strong></strong>
+</p>
+<p>
+    Recruiters like to be able to get an idea of why you move from company to
+    company. Demonstrate your increasing impact and responsibility from job to
+    job.
+</p>
+<p>
+    ● This shows the recruiter that you’re capable of taking on more and more
+    and gives them an idea of where your career is heading.
+</p>
+<p align="center">
+    <strong>Company 1</strong>
+    , Location
+</p>
+<p align="center">
+    <em>Job Title</em>
+    , MM/YYYY-MM/YYYY<strong></strong>
+</p>
+<p>
+    You don’t need to include every job you’ve ever had on your resume. Stick
+    to the jobs that are most relevant and demonstrate your career trajectory.
+    For example, if you are a Project Manager, you probably don’t need to
+    mention the supermarket job you had as a teenager.
+</p>
+<p>
+    <strong>EDUCATION </strong>
+</p>
+<p>
+    Degree, Graduation Year (YYYY), College Name, Location
+</p></table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div></div>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="row1">
+<div class="column1">
+  <img id="oneee" src="Screenshot_4.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+<p align="center">
+    <strong>Your Name</strong>
+    <strong> </strong>
+</p>
+<p align="center">
+    Moscow, State Zip | (123) 456-7890 | yourmail@gmail.com |
+    linkedin.com/in/yourname
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong>CAREER SUMMARY</strong>
+</p>
+<p>
+    Add a  resume summary that highlights what it is you do, the types of companies you’ve worked
+    with, and why you’re great at your job. Typically summaries should be very
+    short and to the point, but you can go a little long in the functional
+    resume format. Consider including experience levels, specializations, or
+    areas of interest. Ensure that your summary perfectly aligns with what is
+    asked for in the job description.
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong>SKILLS AND STRENGTHS</strong>
+    <strong></strong>
+</p>
+<p>
+    ● <strong>Skill 1</strong> - List your most relevant hard skills, soft
+    skills, and experience for this job.
+</p>
+<p>
+    ● <strong>Skill 2</strong> - Mention the skill then briefly add some
+    context to it.
+</p>
+<p>
+    ● <strong>Skill 3</strong> - For example (hard skills):
+</p>
+<p>
+    ● <strong>Forklift Operation</strong> - OSHA certified forklift operator
+    with 5+ years of experience and a perfect safety record
+</p>
+<p>
+    ● <strong>Skill 5</strong> - Another example (soft skills):
+</p>
+<p>
+    ● <strong>Multi-tasking:</strong> Met visual design deadlines on
+    overlapping projects in fast-paced agency environment; used project
+    management apps like Basecamp and Trello to keep organized.
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong>PROFESSIONAL ACCOMPLISHMENTS</strong>
+    <strong></strong>
+</p>
+<p>
+    ● Example: [Action verb] [brief explanation of accomplishment] resulting in
+    [quantifiable outcome. Using %, $, etc. will draw the eye and make an
+    impact]
+</p>
+<p>
+    ● The best resume accomplishments measure your results in terms of dollars,
+    percentages, or time-saved. Use numbers whenever possible.
+</p>
+<p>
+    ● Accomplishment 3
+</p>
+<p>
+    ● Accomplishment 4
+</p>
+<p>
+    ● Accomplishment 5
+</p>
+<p>
+    ● Accomplishment 6
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    <strong>WORK HISTORY</strong>
+</p>
+<p>
+    <strong>Company 4</strong>
+    , Location, Job Title<em>,</em> (MM/YYYY)-Present
+</p>
+<p>
+    <strong>Company 3</strong>
+    , Location, Job Title<em>,</em> (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    <strong>Company 2</strong>
+    , Location, Job Title<em>,</em> (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    <strong>Company 1</strong>
+    , Location, Job Title<em>,</em> (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>EDUCATION</strong>
+    <strong> </strong>
+</p>
+<p>
+    Degree, Graduation Year (YYYY), College Name, Location<strong></strong>
+</p>  </table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div>
+
+<div class="column1">
+  <img id="oneee" src="Screenshot_5.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+<p>
+    <strong>Your Name</strong>
+</p>
+<p>
+    Nairobi, State Zip
+</p>
+<p>
+    (123) 456-7890
+</p>
+<p>
+    yourmail@gmail.com
+</p>
+<p>
+    linkedin.com/in/yourname
+</p>
+<p align="right">
+    <strong></strong>
+</p>
+<p>
+    ➢  Learn how to write bold executive summaries
+    (examples and templates)
+</p>
+<p>
+    ➢ Include your target job title, industry/space, years of experience, and
+    specialties.
+</p>
+<p>
+    ➢ Highlight key achievements or career themes
+</p>
+<p>
+    ➢ Include specific accomplishments, like “250% Revenue Growth in 3 Years”
+</p>
+<p>
+    <strong>Professional Experience</strong>
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p align="right">
+    <strong></strong>
+</p>
+<p>
+    <strong>Company 7</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    MM/YYYY-Present
+</p>
+<p>
+    ➢ At the executive level, little attention should be paid to your
+    day-to-day duties, work habits, or even hard skills.
+</p>
+<p>
+    ○ Instead, it’s all about results and impact.
+</p>
+<p>
+    ➢ Under your leadership, what was the business able to achieve?
+</p>
+<p>
+    ○ What were your biggest initiatives? What bold moves did you make improve
+    the company’s standing? How much did the business grow while you were in
+    the position?
+</p>
+<p>
+    ➢Learn more about creating powerful, concise executive accomplishments
+</p>
+<p>
+    ➢ Numbers and results. Executive recruiters need to know you’re going to
+    move the needle
+</p>
+<p>
+    ○ For example: “Added $32M in new profit over 3 years by developing
+    differentiated product line which decreased service time 50% for end
+    users.”
+</p>
+<p>
+    <strong>Company 6</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    MM/YYYY-Present
+</p>
+<p>
+    ➢ When applying for executive positions, you can’t lean on your hard skills
+    as much as you did earlier in your career.
+  
+        Executive soft skills
+    take on greater significance.
+</p>
+<p>
+    ○ Unfortunately, you can’t just <em>say</em> you have leadership and expect
+    executive recruiters to believe you. You have to find a way to prove it.
+    For example:
+</p>
+<p>
+    ➢ Leadership: Ask yourself, what situations benefited the most from your
+    timely leadership?
+</p>
+<p>
+    ➢ Vision: When you mention your big ideas, initiatives, and
+    accomplishments, demonstrate your vision by including the why and placing
+    them in context of the bigger picture.
+</p>
+<p>
+    ➢ Entrepreneurial: Think back to any pet projects you nurtured, departments
+    you grew, or calculated risks that paid off big.
+</p>
+<p>
+    ➢ I nnovation: Compile the best examples and stories from your past
+    experience in which you changed operating procedure, streamlined processes,
+    consolidated systems, or mined a previously untapped sector of the market.
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    <strong>Company 5</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    MM/YYYY-Present
+</p>
+<p>
+    ➢ Typically, we advise to keep your resume to one page, but if you’ve been
+    at it long enough to reach the C-suite -- particularly if it’s been 10+
+    years -- you deserve another page or two.
+</p>
+<p>
+    ➢ Don’t worry too much about expanding beyond a single page as you show
+    your career trajectory. That said, make sure to put your most important
+    information and achievements on page one.
+</p>
+<p>
+    ➢ Use short bullet points and strong accomplishments to keep your
+    experience powerful and to-the-point.
+</p>
+<p>
+    <strong>Company 3</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    MM/YYYY-Present
+</p>
+<p>
+    ➢ Your executive brand is important to executive recruiters. “I don’t care
+    if it goes back 15 or 30 years,” an executive recruiter told Jobscan
+    . “I just want to see that the resume is promoting a highly competent,
+    proven executive who knows what they’re best at, where they want to go, and
+    what they really want to do next in their career.”
+</p>
+<p>
+    ➢ Find opportunities to show not only the end results, but how you identify
+    opportunities and achieve results
+</p>
+<p>
+    ➢ If possible, communicate your business values. Give the recruiter an idea
+    of what you’ll want to accomplish first at this new job based on what
+    you’re sharing about your previous jobs.
+</p>
+<p>
+    <strong>Company 2</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    MM/YYYY-Present
+</p>
+<p>
+    ➢ As you get further back in your career to your roles as a manager or
+    individual contributor, start to pepper in more of your hard skills and
+    domain knowledge.
+</p>
+<p>
+    ➢ Executive recruiters will like to gain an understanding of your career
+    foundation.
+</p>
+<p>
+    <strong>Company 1</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title</em>
+    MM/YYYY-Present
+</p>
+<p>
+    ➢ “What have you done for me lately?” You don’t need to include your entire
+    career on your resume. If something is 15 or more years old, think hard
+    about whether it adds to your candidacy or not, especially if age discrimination is a concern.
+</p>
+<p align="right">
+    <strong>Education</strong>
+</p>
+<div align="center">
+    <hr size="3" width="100%" align="center"/>
+</div>
+<p>
+    Degree, Graduation Year (YYYY - Optional)
+    <br/>
+    College Name, Location
+</p>
+<p>
+    List additional certifications or relevant leadership/management trainings
+    you’ve received
+</p>  </table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div>
+
+  
+<div class="column1">
+  <img id="oneee" src="Screenshot_6.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+<p>
+    <strong>Your Name</strong>
+    <strong> </strong>
+</p>
+<p>
+    Berlin, State Zip | (123) 456-7890 | yourmail@gmail.com
+</p>
+<p>
+    linkedin.com/in/yourname
+</p>
+<p>
+    Add a strong
+   
+        resume summary
+    </a>
+    here that highlights what it is you do, the types of companies you’ve
+    worked with, and why you’re great at your job. Experience, specializations,
+    areas of interest, etc.
+</p>
+<p align="center">
+    <strong>SKILLS AND ACCOMPLISHMENTS</strong>
+</p>
+<p align="right">
+    <strong></strong>
+</p>
+<p>
+    ● <strong>Skill Topic 1</strong> (eg: Software Engineering or Warehouse
+    Management): Skill 1 | Skill 2 | Skill 3 ...
+</p>
+<p>
+    ● <strong>Skill Topic 2</strong>: Skill 1 | Skill 2 | Skill 3 | Skill 4 |
+    Skill 5…
+</p>
+<p>
+    ● <strong>Skill Topic 3</strong>: Skill 1 | Skill 2 | Skill 3 | Skill 4 …
+</p>
+<p>
+    ● <strong>Accomplishment 1</strong>: [Action verb] [brief explanation of
+    accomplishment] resulting in [quantifiable outcome. Using %, $, etc. will
+    draw the eye and make an impact]
+</p>
+<p>
+    ● <strong>Accomplishment 2</strong>: ...<strong></strong>
+</p>
+<p>
+    ● <strong>Accomplishment 3</strong>: ...<strong></strong>
+</p>
+<p align="center">
+    <strong>WORK EXPERIENCE</strong>
+</p>
+<p>
+    <strong>Company 4</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title,</em>
+    (MM/YYYY)-Present
+</p>
+<p>
+    This is where you write about your experience. Do not simply list your
+    day-to-day job duties. Work in resume keywords that are most relevant to the job for which you’re applying. Provide
+    context to the skills and accomplishments above.
+</p>
+<p>
+    <strong>Company 3</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title,</em>
+    (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    Because you listed skills and accomplishments above using this hybrid
+    format, you can afford to write a little bit less in your experience
+    section. Expand to two pages if necessary, but keeping your resume to one
+    page is a good goal to have (unless you have over 10-15 years of relevant
+    experience).
+</p>
+<p>
+    <strong>Company 2</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title,</em>
+    (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    It’s OK to leave positions off your resume if they aren’t relevant to the
+    job you’re pursuing. Unless the experience is crucial, you can also go into
+    fewer details on older positions.
+</p>
+<p>
+    <strong>Company 1</strong>
+    , Location
+</p>
+<p>
+    <em>Job Title,</em>
+    (MM/YYYY)-(MM/YYYY)
+</p>
+<p>
+    Barely relevant positions deep in your work history can be summed up in a
+    quick line or two.
+</p>
+<p align="center">
+    <strong>EDUCATION</strong>
+    <strong> </strong>
+</p>
+<p>
+    <strong></strong>
+</p>
+<p>
+    Degree, Graduation Year (YYYY), College Name, Location<strong></strong>
+</p>
+  </table>
+</div></div><br>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+<div class="btn-wrap"><a href="index2.html" type="button"><span>More Examples</a></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="icon-blocks">
+  <h2>Resume Guidlines</h2><br><br>
+  <div class="icon-blocks-wrapper"><div class="block">
+    <div class="copy">
+      <h3>There are three common resume formats: chronological, functional, and combination.</h3>
+      <p> One can use it according to their position.</p>
+    </div></div><br><br>
+    <div class="block">
+      <div class="copy">
+        <h3>Chronological Resume</h3><br>
+       <li> Lists your work history in reverse chronological order (most recent first).</li>
+<li>A resume format preferred by many employers.</li>
+<li><b>The preferred format for undergraduates to use.</b></li>
+<li>Works best for those who have progressed in titles and have a good work history.</li>	
+    </div></div><div><br>
+          <div class="copy">
+            <h3>Functional Resume</h3><br>
+            <li>Works well for those with limited education, significant employment gaps, lack of work experience or experience in a different field. This format can be used both by <b>recent grads and career changers.</b></li>
+<li>This format isn’t well received by many employers for a variety of reasons.</li>
+<li>If you’d like to use a functional format, seek assistance from a career adviser for feedback.</li>
+<li>If you like the idea, but think it’s just a little too much, you might consider a combination resume.</li>
+          </div><br>
+      <div class="copy">
+            <h3>Combination Resume</h3><bR>
+            <li>Combines both detailed work history and skills.</li>
+<li>Usually includes a <b> “skills summary”</b> or<b> “highlights”</b> section near the top.</li>
+<li>Keep your skills section short, somewhere around four bullets.</li>
+          </div></div></div></div><br><br><br><br><br><br>
+
+
+       <div class="grid">
+         <h4 class="text--center mb-60--tablet mb-40--phone">Basic Resume Template to Copy and Use</h4><br>
+         <div class="document">
+          <p><strong>Contact Information</strong></p>
+          <p>[Your Name]</p>
+          <p>[Your Job Title]</p>
+          <p>[Email&nbsp;Address]</p>
+          <p>[Phone Number]</p>
+          <p>[LinkedIn]</p>
+          <p>[Optional: Personal Website, Twitter, Other Relevant Links]</p>
+          <p><strong>Resume Summary Statement</strong></p>
+          <div>
+          		<p>Dependable/Detail-oriented/Creative[Your Job Title]&nbsp;with&nbsp;[X]&nbsp;years of experience in&nbsp;[Your Industry/Niche]. Helped&nbsp;[increase revenue/cut costs/train employees/other achievements]&nbsp;by&nbsp;[X]%. Looking to join&nbsp;[Company Name]&nbsp;to ensure[highest customer happiness scores/a steady boost in ROI/prompt project delivery/other metrics and KPIs you hope to deliver for the prospective employer].</p>
+          		<p><strong>Work Experience/Job Description</strong></p>
+          </div><p>[Your Job Title]</p>
+          	<p>[Company Name]</p>
+          	<p>[2012–2019]</p>
+          	<ul>
+          		<li>Use bullet points to describe your work history.</li>
+          		<li>Add up to 6 bullet points. Focus on what applies to the job you're trying to land, don't cram your resume with unnecessary details.</li>
+          		<li>Don't just list your responsibilities. Focus on your achievements!</li>
+          		<li>Maybe you saved your company money? Boosted sales? Optimized processes? Trained new employees? Show it off! Have a look:</li><li>Responsible for&nbsp;[your responsibilities].</li>
+          		<li>[Boosted sales/cut costs]&nbsp;by&nbsp;[X]% through implementing a new system of&nbsp;[invoicing/project management/procurement, etc.]</li>
+          	</ul>
+          	<p>[Your&nbsp;Previous&nbsp;Job Title]</p>
+          	<p>[Previous&nbsp;Company Name]</p>
+          <p>[2008–2012]</p>
+          	<ul>
+          		<li>List your jobs in reverse-chronological order. Start with your current or most recent position, then follow it with the one before it, and so on.</li>
+          		<li>As you go back in time, limit the number of bullet points under each entry. Employers are more interested in what you've been doingin the last few years, not in the dim and distant past.</li>
+          	    <li>Don't list over 15 years of relevant work experience on your resume.</li>
+          	</ul>
+          	<div>
+          		<p><strong>Education</strong></p>
+          		<p>[BA/MA in Your Major]</p>
+          			<p>[University Name]</p>
+          		<p>[Graduation Year]</p>
+          		<ul>
+          			<li>Not much experience? Leverage your academic achievements. Include your GPA if it's higher than 3.5, mention extracurricular activities.</li>
+          			<li>If you have a lot of professional experience, limit your education section to your highest degree.</li>
+          	   </ul>
+          	</div>
+          		<p><strong>Skills</strong></p>
+          		<p>[Skill&nbsp;#1: Advanced]</p>
+          		<p>[Skill&nbsp;#2: Advanced]</p>
+          		<p>[Skill&nbsp;#3: Basic]</p>
+          		<p>[Certifications]</p>
+          		<p><strong>Additional Resume Sections</strong>
+          		<p>[Volunteer Experience]</p>
+          		<p>[Conference Participation]</p>
+          		<p>[Hobbies and Interests]</p>
+       </div></div><br><br><br><br><br><br>
+
+        <div class="build">
+          <h3>To Make a Great First Impression</h3><br><br><br>
+		<div class="btn-wrapp"><a href="index3.html" type="button"><span>BUILD A RESUME NOW</a></div><br><BR><BR><BR><BR>
+
+	   <div class="dos">
+  <h2>The Do's and Dont's of Resume Writing</h2>
+  <br><br>
+  <h3>Do's</h3><br>
+  <ul>
+	  <li>Within each section, you must list experiences in reverse chronological order, starting with the most recent.</li>
+	<li>Qualify and quantify your experiences whenever possible. Include numbers and percentages when possible.</li>
+	<li>Highlight specific accomplishments rather than expand on every detail.</li>
+	<li>Expand on professional, volunteer, research, and classroom experiences to show transferable skills.</li>
+	<li>Proofread your work. Ask the Career Center, friends, and advisors for help.</li>
+	<li>List the most important, relevant items first. For example, you may decide to move your “Internships” and “Projects” sections above your “Customer Service Experience” section. Underneath each experience, you should also put the most important bullet points first.</li>
+</ul><br>
+  <h3>Don'ts</h3><br>
+  <ul>
+  	<li>Use templates and tables included in software.</li>
+	  	<li>Make general claims (“Good communication skills”) without backing them up with examples.</li>
+	<li>Mislead employers about your GPA, skills, or abilities.</li>
+	<li>Include long, generic objective statements. Employers won’t read them!</li>
+	<li>Submit references on the same page as your resume. They should be kept in a separate document and provided when the employer asks for them.</li>
+  </ul>
+  </div><br><br><br><br><br><br><br><br><br>
+
+  <h2 class="cv">CV Templates</h2><br>
+  <p style="font-size: 20px;">(First Impression Is The Last Impression)</p><br><br><br>
+
+ <div class="row1">
+<div class="column1">
+  <img id="oneee" src="cv1.png">
+<div id="exportContent">
+  <div id="exportContent">
+<table id="threee">
+<p>
+    <h2 style="color: orange;">[Your Name]</h2>
+</p>
+<p>
+    [Street Address] | [City, ST ZIP Code] | [Phone] | [Email]
+</p>
+<p>
+    <h4 style="color: orange;">[Date]</h4>
+</p>
+<p>
+    [Recipient Name]
+</p>
+<p>
+    [Title]
+</p>
+<p>
+    [Company]
+</p>
+<p>
+    [Address]
+</p>
+<p>
+    [City, ST ZIP Code]
+</p>
+<p>
+    <h4 style="color: orange;">Dear [Recipient]:</h4>
+</p>
+<p>
+    [If you’re ready to write, just select this tip text and start typing to
+    replace it with your own. Don’t include space to the right or left of the
+    characters in your selection.]
+</p>
+<p>
+    [Apply any text formatting you see in this letter with just a click from
+    the Home tab, in the Styles group.]
+</p>
+<p>
+    [Wondering what to include in your cover letter? It’s a good idea to
+    include key points about why you’re a great fit for the company and the
+    best choice for the specific job. Of course, don’t forget to ask for the
+    interview—but keep it brief! A cover letter shouldn’t read like a novel, no
+    matter how great a plot you’ve got.]
+</p>
+<p>
+   <h4 style="color: orange;"> Sincerely,
+</p>
+    [Your Name]</h4>
+  </table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div>
+
+<div class="column1">
+  <img id="oneee" src="cv2.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+<p><br><br>
+    <h2 style="color: green;">[Your Name]</h2>
+</p>
+<hr style="color:green">
+<p>
+    Street Address | City, ST ZIP Code | Phone | Email
+</p>
+<p>
+    <h4>Date</h4>
+</p>
+<p>
+    Recipient Name
+</p>
+<p>
+    Title
+</p>
+<p>
+    Company
+</p>
+<p>
+    Address
+</p>
+<p>
+    City, ST ZIP Code
+</p>
+<p>
+    <h4>Dear [Recipient]:</h4>
+</p>
+<p>
+    If you’re ready to write, just select this tip text and start typing to
+    replace it with your own. Don’t include space to the<br> right or left of the
+    characters in your selection.
+</p>
+<p>
+    Apply any text formatting you see in this letter with just a click from
+    the Home tab, in the Styles group.
+</p>
+<p>
+    Wondering what to include in your cover letter? It’s a good idea to
+    include key points about why you’re a great fit for the<br> company and the
+    best choice for the specific job. Of course, don’t forget to ask for the
+    interview—but keep it brief!<br> A cover letter shouldn’t read like a novel, no
+    matter how great a plot you’ve got.
+</p>
+<p>
+   <h4> Sincerely,
+</p>
+    Your Name</h4></table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div>
+
+  
+<div class="column1">
+  <img id="oneee" src="cv3.png">
+<div id="exportContent">
+    <a onclick="Export2Doc('exportContent', 'word-content');"></a>
+  <div id="exportContent">
+<table id="threee">
+ <div align="right">
+<p style="color:#de5d83;">
+    [Recipient Name]
+</p>
+<p style="color:#de5d83;">
+    [Title]
+</p>
+<p style="color:#de5d83;">
+    [Company]
+</p>
+<p style="color:#de5d83;">
+    [Address]
+</p>
+<p style="color:#de5d83;">
+    [City, State Zip]
+</p></div><br>
+<p style="color:#de5d83;">
+    Dear [Recipient Name],
+</p>
+<p>
+    Are you looking for a [job title] with :
+</p>
+<p>
+    [Number] years of hands-on experience in [area of expertise]
+</p>
+<p>
+   
+</p>
+<ul>
+     <li>[Knowledge of the latest technology In industry of field]?</li>
+    <li>
+        [Excellent written and oral communication skills?]
+    </li>
+    <li>
+        [A passion to learn and to increase his skills?]
+    </li>
+</ul>
+<p>
+    If so, then you need look no further. You will see from my enclosed resume
+    that I meet all of these qualification and more.
+</p>
+<p>
+    I would very much like to discuss opportunities with [Company Name]. To
+    schedule an interview, please call me at [phone]. The best time<br> to reach me
+    is between [earliest time] and [latest time], but you can leave a voice
+    message at my time and I will return your call.
+</p>
+<p>
+    Thank you for taking the tie to review my resume. I look forward to taking
+    with you.
+</p><br>
+<p style="color:#de5d83;">
+    Sincerely,
+</p>
+<p style="color:#de5d83;">
+    [Your Name]
+</p>
+<p style="color:#de5d83;">
+    Enclosure
+</p></table>
+</div></div>
+  <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
+</div></div>
+
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>--><br><br><br><br><br><br><br><br><br>
+
+<div class="cvs">
+  <h2>Why Cover Letters Are Important
+</h2>
+  <br><br>
+   <p>
+	  	<b>A cover letter is more than just a formality or courtesy – it is an opportunity to impress. Research suggests that employers favor resumes that are accompanied by a cover letter, making it a critical component of your job-search strategy.<br><br></b>
+	  	A well-written cover letter is an opportunity to show the reader your:<br><br>
+			<li><b>Immediate Value<br></b></li>
+			First impressions count. A concise and compelling cover letter is your first chance to stand out and be considered a strong candidate amongst tough competition. Immediately emphasizing your key strengths will help ‘sell you,’ grabbing the reader’s attention and increasing the likelihood of progression through the selection process.<br><br>
+			<li><b>Unique Fit<br></b></li>
+			A cover letter is an important way to showcase how your unique combination of skills and experience meet the key requirements of the job description. It is your chance to show a clear link between your knowledge, experience and abilities and the needs of the employer.<br><br>
+			<li><b>Personality<br></b></li>
+			The wording of your cover letter can express your personality in a way that your resume cannot. The tone of your letter gives the employer an important insight into your personality and the kind of traits that could add value to their team. It allows you to explain in your own words why you are the best person for the job.<br><br>
+			<li><b>Enthusiasm<br></b></li>
+			A tailored, compelling cover letter shows you have taken the time to research the company and understand the employer’s needs and job requirements. It is an opportunity to express that you are enthusiastic about the role and to demonstrate the value you would add to the employer.
+			For help writing an impressive cover letter, contact a Michael Page recruitment consultant or check out these helpful tips on how to write a cover letter.
+	</p>
+  </div><br><br>
+  <blockquote class="otro-blockquote"><p>Failure doesn't mean you are a failure it just means you haven't succeeded yet.</p>
+  <span>Robert H. Schuller</span></blockquote><br><br>
+  <footer>
+  	<div class="footer-main-div">
+  <div class="footer-social-icons">
+  	<p><strong>Join the conversation</strong></p><br>
+    <ul>
+      <li><a href="https://www.facebook.com/darshita.shah.7564?epa=SEARCH_BOX" target="blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.github.com/Gaminee" target="blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.twitter.com/darshita45_" target="blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/darshita-shah-33a9361a4" target="blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/___r.g.3006___" target="blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    <br>
+    <br><br>
+    <center><p><i>Copyright 2020 &copy; Wresume.com. All Rights Reserved.</i> </p></center>
+    </div>
+  </div>
+  </div>
+</div>
+  </footer>
+</body>
+</html>

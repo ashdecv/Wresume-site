@@ -1,0 +1,231 @@
+<html>
+<head>
+	<title>Contact Us | Wresume.com</title>
+	 <link rel="icon" href="cv22.png" 
+        type = "image/x-icon"> 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="g2.css">
+</head>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		background-size: auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		font-family: sans-serif;
+	}
+	.contact-form{
+		font-family: 'Montserrat', sans-serif;
+		background: #FFFFFF;
+		width: 31%;
+		margin-left: 560px;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+		-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+		-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+	}
+	.contact-title{
+		width: 100%;
+		height: 220px;
+		color: #fff;
+		letter-spacing: .1rem;
+		background: linear-gradient(57deg,#3a1c71 , #d76d77 , #ffaf7b);
+		transition: all 4s ease-in-out;
+	}
+	.contact-title h1{
+		font-size: 32px;
+		line-height: 10px;
+	}
+	.contact-title h2{
+		font-size: 15px;
+	}
+	form{
+
+		margin-top: 50px;
+		transition: all 4s ease-in-out;
+	}
+	.form-control{
+		width: 420px;
+		background:transparent;
+		border:none;
+		outline: none;
+		border-bottom: 1px solid gray;
+		color: black;
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
+	input{
+		height: 45px;
+	}
+	form .submit{
+		background:#d76d77;
+		border-color: transparent;
+		color: #fff;
+		font-size: 20px;
+		letter-spacing: 2px;
+		width: 430px;
+		height: 50px;
+		margin-left: 1px;
+		margin-top: 20px;
+	}
+	form .submit:hover{
+		background-color: #fff;
+		color: #d76d77;
+		border: 1.3px solid #d76d77;
+		cursor:pointer;
+	}
+	label,
+	textarea {
+	    font-size: 15px;
+	    letter-spacing: 1px;
+	}
+	textarea {
+	    padding: 10px;
+	    line-height: 1.5;
+	    border-radius: 2px;
+	    border: 1px solid #ccc;
+	    box-shadow: 1px 1px 1px #999;
+	    margin-left: -1px;
+	}
+
+	label {
+	    display: block;
+	    font-size: 17px;
+	    margin-bottom: 10px;
+	    margin-left: -380px;
+	}
+.footer-main-div{
+  width: 100%;
+  height: 185px;
+  margin: auto;
+  background: #303D46;
+  padding: 20px 0px;
+}
+.footer-social-icons{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-icons ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background:white;
+}
+.footer-social-icons ul li a{
+  color:#272727;
+  font-size: 25px;
+}
+.footer-social-icons ul li a i{
+  line-height: 50px;
+}
+.footer-social-icons p{
+	color: #fff;
+}
+.fa-facebook:hover{
+	/*color: #3b5998;*/
+	opacity: 0.6;
+}
+.fa-github:hover{
+/*	color: #333;
+*/
+opacity: 0.6;
+}
+.fa-twitter:hover{
+/*	color: #00acee;
+*/
+opacity: 0.6;}
+.fa-linkedin:hover{
+/*	color: #0e76a8;
+*/
+opacity: 0.6;}
+.fa-instagram:hover{
+/*	color: 
+*/
+
+opacity: 0.6;
+}
+.menu{
+    width: 50%; height: 85px;
+}
+
+.menu ul{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+    margin-left: 800px;	
+    margin-top: -1px;
+	  font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu ul a{
+	color: #fff;
+	text-decoration: none;
+}
+</style>
+<body>
+	<div class="Contact-title">
+		<div class="menu"> 
+    <ul><br>
+    <a href="index.html" class="cool-link"><li>Home</li></a>
+    <a href="g1.html" class="cool-link"><li>About Us</li></a>
+    <a href="g2.html" class="cool-link"><li>Team</li></a>
+    <a href="contact.html" class="cool-link"><li>Contact</li></a>
+   </ul>
+  </div><br>
+		<h1>Contact Us</h1><br>
+		<h2> We are always ready to serve you!</h2>
+	</div>
+	<div class="contact-form">
+		<form id="contact-form" method="post" action="contact1.php"><br>
+			<label for="name">Name:</label>
+			<input type="text" name="name" class="form-control"  placeholder="Your Name" required>
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" name="email" class="form-control" placeholder="Your Email" required>
+			<br>
+			<label for="message"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message:</label>
+
+<textarea  name="message"
+          rows="5" cols="47">
+</textarea>			<br>
+			<input type="submit" class="form-control submit" value="SEND MESSAGE"></div>
+		</form><BR><BR><BR>
+		<footer>
+  	<div class="footer-main-div">
+  <div class="footer-social-icons">
+  	<center><p><strong>Join the conversation</strong></p></center><br>
+    <ul>
+      <li><a href="https://www.facebook.com/darshita.shah.7564?epa=SEARCH_BOX" target="blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.github.com/Gaminee" target="blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://www.twitter.com/darshita45_" target="blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/darshita-shah-33a9361a4" target="blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://www.instagram.com/___r.g.3006___" target="blank"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    <br>
+    <br>
+    <center><p><i>Copyright 2020 @ Wresume.com. All Rights Reserved.</i> </p></center>
+    </div>
+  </div>
+  </div>
+</div>
+  </footer>
+</body>
+</html>

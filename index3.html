@@ -1,0 +1,254 @@
+<html moznomarginboxes mozdisallowselectionprint>
+<title>Wresume.com</title>
+<link rel="icon" href="cv22.png" 
+        type = "image/x-icon"> 
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+	@media print {
+	@page { margin: 0; }
+	body { margin: 1.6cm; }
+	}
+	.one{
+    	font-family: Georgia, serif	;
+	}
+	#f1, #f2, #f3{
+		align-items: right;
+		text-align: right;
+		margin-right: 20px;
+	}
+	#f4{
+		margin-left: 31px;
+	}
+    #f5, #f6, #f7{
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+	.bv{
+		text-align: center;
+	}
+	#f5, #f6, #f7{
+		text-align: center;
+	}
+	hr{
+		background-color: #fff;
+		
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.two{
+		text-decoration: bold;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 50;
+		text-decoration: underline;
+	}
+	.three{
+		text-decoration: bold;
+		text-align: left;
+		font-size: 15px;
+		margin-left: 350px;
+		text-decoration: underline;
+	}
+	.form-style-8{
+	    font-family: 'Montserrat', sans-serif;
+		width: 500px;
+		float: left;
+		margin-left: 100px;
+		margin-top: 22px;
+		padding: 30px;
+		padding-top: 0.1%;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+		-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+		-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+    }
+	.form-style-8 h2{
+		background: #4D4D4D;
+		text-transform: uppercase;
+	    font-family: 'Montserrat', sans-serif;
+		color: #797979;
+		font-size: 18px;
+		font-weight: 100;
+		letter-spacing: .5px;
+		padding: 20px;
+		margin: -30px -30px 30px -30px;
+    }
+	.form-style-8 input[type="text"],
+	.form-style-8 input[type="email"],
+	.form-style-8 input[type="number"]
+	{
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		outline: none;
+		display: block;
+		width: 100%;
+		padding: 7px;
+		border: none;
+		border-bottom: 1px solid #ddd;
+		background: transparent;
+		margin-bottom: 10px;
+		font: 16px Arial, Helvetica, sans-serif;
+		height: 45px;
+	}
+	.form-style-8 textarea{
+		resize:none;
+		overflow: hidden;
+	}
+	.form-style-8 input[type="button"], 
+	.form-style-8 input[type="submit"]{
+		-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+		box-shadow: inset 0px 1px 0px 0px #45D6D6;
+		background-color: #2CBBBB;
+		border: 1px solid #27A0A0;
+		display: inline-block;
+		cursor: pointer;
+		color: #FFFFFF;
+	    font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		padding: 8px 18px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.form-style-8 input[type="button"]:hover, 
+	.form-style-8 input[type="submit"]:hover {
+		background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+		background-color:#34CACA;
+	}
+	.card-container{
+		display: flex;
+		justify-content: center;
+		margin-top: -25px;
+		margin-right: 1px;
+	}
+	.card{
+		width: 580px;
+		height: 695px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background: white;
+		box-shadow: 0 4px 8px 0 rgba(15,2,2,0.692);
+	}
+	.container{
+		padding: 2px 16px;
+		font-family: 'Lato';
+	}
+	.four{
+		margin-top: -40px;
+	}
+	.bck{
+		width: 545px;
+		height: 55px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.button{
+		margin-left: 660px;
+		display: inline-block;
+		width: 105px;
+		height: 24px;
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: #fff;
+		text-align: center;
+		padding-top: 3%;
+		background-color: #d76d77;
+		padding: 0.2rem 1rem;
+		margin-top: 1rem;
+		margin-right: 100;
+		border-radius: .1rem;
+		position: relative;
+	}
+	.button:hover{
+		background-color: #fff;
+	color: #d76d77;
+	border: 1.3px solid #d76d77;
+	}
+</style>
+<script>
+	function check()
+	{
+		document.getElementById('f1').innerHTML = document.myform.name.value;
+		document.getElementById('f2').innerHTML = document.myform.email.value;
+		document.getElementById('f3').innerHTML = document.myform.number.value;
+		document.getElementById('f4').innerHTML = document.myform.summary.value;
+		document.getElementById('f5').innerHTML = document.myform.experience.value;
+		document.getElementById('f6').innerHTML = document.myform.skills.value;
+		document.getElementById('f7').innerHTML = document.myform.education.value;
+		document.getElementById("id").style.display="none";
+	}
+</script>
+
+<p class="three"></p>
+<form class="form-style-8" id="id" name="myform">
+	<h2>ENTER  YOUR  DETAILS</h2>
+	<p><strong></strong> Name :
+		<input type='text' name='name' value="Your Name">
+		<p><strong></strong> Email :
+			<input type="email" name="email" value="yourmail@gmail.com">
+		</p>
+		<p><strong></strong> Phone Number :
+			<input type="number" name="number" value="9876543210">
+		</p>
+		<p><strong></strong> Summary :
+			<input type="text" rows="10" name="summary" value="Add a strong resume summary here that highlights what it is you do, the types of companies you have worked with, and why you are great at your job. Experience, specializations, areas of interest, etc. ">
+		</p>
+		<p><strong></strong> Experience :
+			<input type="text" name="experience" value="2010 - Present : Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus aliquet faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus aliquet faucibus.">
+		</p>
+		<p><strong></strong> Skills :
+			<input type="text" name="skills" value="skill 1| skill 2| skill 3">
+		</p>
+		<p><strong></strong> Education :
+			<input type="text" name="education" value="Degree, Graduation Year (YYYY), College Name, Location ">
+		</p>
+			<p><input type='submit' name="" onclick='check(); return false'></p>
+		</p>
+</form>
+</div><br>
+	<div class="card-container">
+	 	<div class="card">
+	 		<div class="container">
+<div class="print">
+	<br>
+	<header>
+		<img class="bck" src="bck.jpeg">		
+	</header>
+	<strong><p id="f1"></p></strong>
+	<strong><p id="f2"></p></strong>
+	<strong><p id="f3"></p></strong>
+	<strong><hr></strong>
+	<strong>&nbsp; &nbsp; &nbsp; &nbsp; Summary</strong>
+	<p id="f4"></p>
+	<hr>
+	<p class="bv"><strong>&nbsp; &nbsp; &nbsp; &nbsp; Experience</strong></p>
+	<p id="f5"></p>
+	<hr>
+	<p class="bv"><strong>&nbsp; &nbsp; &nbsp; &nbsp; Skills</strong></p>
+	<p id="f6"></p>
+	<hr>
+	<p class="bv"><strong>&nbsp; &nbsp; &nbsp; &nbsp; Education</strong></p>
+	<p id="f7"></p>
+	<br>
+<footer>
+			<img class="bck" src="bck.jpeg">		
+</footer>
+</div></div></div></div><br>
+	<a href="#!" class="button" id="printpagebutton" onclick="printpage()">Download</a>
+<br><br><br><br>
+<script>
+	const button = document.querySelector('a');
+button.addEventListener('click', () => {window.print()});
+</script>
+<script>
+ function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+    }
+</script>
+</div>
+</html>
