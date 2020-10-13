@@ -1,6 +1,6 @@
 *{
-    margin: 0; 
-    padding:0; 
+    margin: 0;
+    padding:0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
@@ -36,13 +36,13 @@ body{
     width: 100%;
     height: 600px;
     background: #0f8a9d;
-    background: linear-gradient(57deg,#3a1c71 , #d76d77 , #ffaf7b);    
+    background: linear-gradient(57deg,#3a1c71 , #00c6a7 , #1e4d92);
 }
 
 
 nav{
     width: 100%; height: 100px;
-    display: flex; color: white;    
+    display: flex; color: white;
 }
 
 .logo{
@@ -94,17 +94,17 @@ nav{
 }
 section{ display: flex;  }
 
-.leftside { 
-	width: 45%; 
-	height: auto; 
-	overflow: hidden; 
+.leftside {
+	width: 45%;
+	height: auto;
+	overflow: hidden;
 	margin-top: 100px;
 	margin-left: 90px;
 }
 
 .leftside img{
-  width: 450px;  
-  height: 300px; 
+  width: 450px;
+  height: 300px;
 }
 
 .rightside{ width: 55%; height: 300px; color: white; text-align: center; margin-top: 80px; padding: 40px;}
@@ -113,22 +113,22 @@ section{ display: flex;  }
     color: #ffffff;
     font-size: 50px;
     font-weight: 400;
-    text-transform: uppercase; } 
+    text-transform: uppercase; }
 
-.rightside p {  
+.rightside p {
     font-size: 1.1rem; padding: 30px 0; }
 
 .rightside button{   font-size: 17px;
     font-weight: 600;
     color: white;
     text-transform: uppercase;
-    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 );
     border-radius: 4px 4px 4px 4px;
-    padding: 20px 35px ; 
+    padding: 20px 35px ;
 }
 
 .rightside button:hover{
-      background: linear-gradient(57deg, #1E4D92, #00C6A7 );   
+      background: linear-gradient(57deg, #1E4D92, #00C6A7 );
 }
 
 h2{
@@ -171,7 +171,7 @@ h2{
 	border: 1.5px solid black;
 }
 #oneee:hover{
-	border: 2px solid #d76d77;
+	border: 2px solid #176c98;
 
 }
 #onee{
@@ -201,19 +201,19 @@ img{
 
 img:hover{
 	transform: scale(1.2);
-	border: 2px solid #d76d77;
+	border: 2px solid #176c98;
 }
 .btn{
 	width: 400px;
 	height: 30px;
 	color: #fff;
-	background-color: #d76d77;
+	background-color: #176c98;
 	cursor: pointer;
 }
 .btn:hover{
 	background-color: #fff;
-	color: #d76d77;
-	border: 1.3px solid #d76d77;
+	color: #176c98;
+	border: 1.3px solid #176c98;
 }
 .cta-btn{
 	display: inline-block;
@@ -232,7 +232,7 @@ img:hover{
 .cta-btn:hover{
 	background-color: #fff;
 	color: #d76d77;
-	border: 1.3px solid #d76d77;
+	border: 1.3px solid #176c98;
 }
 .btn-wrap a{
 			align-items: center;
@@ -249,7 +249,7 @@ img:hover{
 			width: 280px;
 			height: 49px;
 			text-align: center;
-		    background: #d76d77;    
+		    background: #176c98;
 			font-size: 1.3em;
 			margin-right: auto;
 			margin-left: auto;
@@ -277,7 +277,7 @@ img:hover{
    right: 0;
  }
 .icon-blocks{
-  color: #4b4b4b;
+  color: #ebfeff;
   font-size: 1.125rem;
   letter-spacing: -.06px;
   font-weight: 400;
@@ -291,12 +291,12 @@ img:hover{
   max-width: 1270px;
   padding: 60px 20px;
 /* background: #ebfeff;*/
-  background-color: #ffe9ec;
+  background-color: #176c98;
 }
 .icon-blocks h2{
   text-decoration: none;
   font-weight: 400px;
-    color: #4b4b4b;
+    color: #ebfeff;
 }
 
 .build{
@@ -372,12 +372,12 @@ img:hover{
 
 .progress-bar {
   height: 6px;
-  background: #d76d77;
+  background: #176c98;
   width: 0%;
 }
 
 .dos{
-	color: #4b4b4b;
+	color: #ebfeff;
   font-size: 1.125rem;
   letter-spacing: -.06px;
   font-weight: 400;
@@ -391,13 +391,13 @@ img:hover{
   max-width: 1250px;
   text-align: left;
   padding: 60px 40px;
-/*background: #ebfeff;*/  
-  background-color: #ffe9ec;}
+/*background: #ebfeff;*/
+  background-color: #176c98;}
 
 .dos h2{
   text-decoration: none;
   font-weight: 300px;
-    color: #4b4b4b;
+    color: #ebfeff;
     text-align: left;
 }
 
@@ -406,7 +406,7 @@ img:hover{
 }
 
 .cvs{
-	color: #4b4b4b;
+	color: #ebfeff;
   font-size: 1.125rem;
   letter-spacing: -.06px;
   font-weight: 400;
@@ -420,11 +420,12 @@ img:hover{
   max-width: 1250px;
   text-align: left;
   padding: 60px 40px;
-/*background: #ebfeff;*/  
-  background-color: #ffe9ec;
+/*background: #ebfeff;*/
+  background-color: #176c98;
 }
 .cvs h2{
 	text-decoration: none;
+  color: #ebfeff;
 }
 
 .btn-wrapp a{
@@ -442,7 +443,7 @@ img:hover{
 			width: 350px;
 			height: 49px;
 			text-align: center;
-		    background: #d76d77;    
+		    background: #176c98;
 			font-size: 1.3em;
 			margin-right: auto;
 			margin-left: auto;
@@ -478,7 +479,7 @@ img:hover{
   font-style:italic;
   color: #555555;
   padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #d76d77 ;
+  border-left:8px solid #176c98 ;
   line-height:1.6;
   position: relative;
   background:#EDEDED;
@@ -487,7 +488,7 @@ img:hover{
 .otro-blockquote::before{
   font-family:Arial;
   content: "\201C";
-  color:#d76d77;
+  color:#176c98;
   font-size:4em;
   position: absolute;
   left: 10px;
@@ -558,7 +559,7 @@ opacity: 0.6;}
 */
 opacity: 0.6;}
 .fa-instagram:hover{
-/*	color: 
+/*	color:
 */
 
 opacity: 0.6;

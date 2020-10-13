@@ -13,25 +13,25 @@
     var blob = new Blob(['\ufeff', html], {
         type: 'application/msword'
     });
-    
+
     var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
-    
+
     filename = filename?filename+'.doc':'document.doc';
-   
+
     var downloadLink = document.createElement("a");
 
     document.body.appendChild(downloadLink);
-    
+
     if(navigator.msSaveOrOpenBlob ){
         navigator.msSaveOrOpenBlob(blob, filename);
     }else{
         downloadLink.href = url;
-        
+
         downloadLink.download = filename;
-        
+
         downloadLink.click();
     }
-    
+
     document.body.removeChild(downloadLink);
 }
 </script>
@@ -48,8 +48,8 @@ function myFunction() {
 
 <head>
  <title>Wresume.com</title>
-        <link rel="icon" href="cv22.png" 
-        type = "image/x-icon"> 
+        <link rel="icon" href="cv22.png"
+        type = "image/x-icon">
  <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,7 +58,7 @@ function myFunction() {
 <body>
 <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
-  </div> 
+  </div>
 
 <!--<a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>-->
 
@@ -67,7 +67,7 @@ function myFunction() {
   <div class="logo">
    <h1>Wresume.com</h1>
   </div>
-  <div class="menu"> 
+  <div class="menu">
     <ul>
     <a href="index.html" class="cool-link"><li>Home</li></a>
     <a href="g1.html" class="cool-link"><li>About Us</li></a>
@@ -78,14 +78,14 @@ function myFunction() {
   </div>
  </nav>
  <section>
-  <div class="leftside"> 
+  <div class="leftside">
    <img src="cv33.png">
   </div>
-  <div class="rightside"> 
+  <div class="rightside">
    <h1>The Wresume site</h1>
    <p>Get your free resume templates</p>
   </div>
-  
+
  </section>
 
 </header>
@@ -305,7 +305,7 @@ function myFunction() {
   <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
 </div>
 <!----------------------------------------------------------------------------------------------------------------------------------->
-  
+
 <div class="column1">
   <img id="oneee" src="Screenshot_3.png">
 <div id="exportContent">
@@ -655,7 +655,7 @@ Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong><
 <p>
     ➢ When applying for executive positions, you can’t lean on your hard skills
     as much as you did earlier in your career.
-  
+
         Executive soft skills
     take on greater significance.
 </p>
@@ -780,7 +780,7 @@ Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong><
   <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
 </div>
 
-  
+
 <div class="column1">
   <img id="oneee" src="Screenshot_6.png">
 <div id="exportContent">
@@ -799,7 +799,7 @@ Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong><
 </p>
 <p>
     Add a strong
-   
+
         resume summary
     </a>
     here that highlights what it is you do, the types of companies you’ve
@@ -923,7 +923,7 @@ Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong><
        <li> Lists your work history in reverse chronological order (most recent first).</li>
 <li>A resume format preferred by many employers.</li>
 <li><b>The preferred format for undergraduates to use.</b></li>
-<li>Works best for those who have progressed in titles and have a good work history.</li>	
+<li>Works best for those who have progressed in titles and have a good work history.</li>
     </div></div><div><br>
           <div class="copy">
             <h3>Functional Resume</h3><br>
@@ -1138,7 +1138,7 @@ Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong><
   <button class="btn" onclick="Export2Doc('exportContent', 'word-content');">Download</button>
 </div>
 
-  
+
 <div class="column1">
   <img id="oneee" src="cv3.png">
 <div id="exportContent">
@@ -1171,7 +1171,7 @@ Skill 1 | Skill 2 | Skill 3 | Skill 4 | Skill 5 | Skill 6 | Skill 7    <strong><
     [Number] years of hands-on experience in [area of expertise]
 </p>
 <p>
-   
+
 </p>
 <ul>
      <li>[Knowledge of the latest technology In industry of field]?</li>
